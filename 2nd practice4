@@ -1,0 +1,18 @@
+function calculateBMI(weight, height) {
+    // Calculate BMI
+    const bmi = weight / (height * height);
+
+    // Determine the message based on the BMI value
+    if (bmi < 18.5) {
+        return `Your BMI is ${bmi.toFixed(1)}, so you are underweight.`;
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        return `Your BMI is ${bmi.toFixed(1)}, so you have a normal weight.`;
+    } else if (bmi > 24.9) {
+        return `Your BMI is ${bmi.toFixed(1)}, so you are overweight.`;
+    }
+}
+
+// Example usage:
+const weight = 70; // weight in kilograms
+const height = 1.75; // height in meters
+console.log(calculateBMI(weight, height));

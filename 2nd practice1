@@ -1,0 +1,19 @@
+// Step 1: Create a prompt to ask for the user's name
+let userName = prompt("What is your name?");
+
+// Step 2: Assign the name to a variable (already done above)
+
+// Step 3: Create a function to standardize the name format
+function standardizeName(name) {
+    // Convert the entire name to lower case
+    let lowerCaseName = name.toLowerCase();
+
+    // Capitalize the first letter and concatenate it with the rest of the name
+    return lowerCaseName.charAt(0).toUpperCase() + lowerCaseName.slice(1);
+}
+
+// Step 4: Use the function to standardize the name
+let standardizedName = standardizeName(userName);
+
+// Show the alert with the standardized name
+alert("Hello " + standardizedName);

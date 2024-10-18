@@ -1,0 +1,15 @@
+function lifeInWeeks(currentAge) {
+    const maxAge = 90; // Maximum age to live until
+    const yearsLeft = maxAge - currentAge; // Calculate the years left
+
+    // Calculate days, weeks, and months left
+    const daysLeft = yearsLeft * 365;
+    const weeksLeft = yearsLeft * 52;
+    const monthsLeft = yearsLeft * 12;
+
+    // Log the message with the calculated values
+    console.log(`You have ${daysLeft} days, ${weeksLeft} weeks, and ${monthsLeft} months left.`);
+}
+
+// Example usage
+lifeInWeeks(56); // Output: You have 12410 days, 1768 weeks, and 408 months left.
